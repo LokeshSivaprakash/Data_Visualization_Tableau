@@ -1,97 +1,43 @@
 # Data_Visualization_Tableau
 
-CSU Recreation Center Data Visualization (Tableau)
+Descriptive_Statistics_Table_Calculations
 
-Project Overview
+Objective
 
-This project is an introductory Tableau visualization exercise using real usage data from the Cleveland State University (CSU) Recreation Center. The goal is to become familiar with Tableau’s interface while building meaningful visualizations that provide insight into student recreation center usage patterns.
-Using the provided dataset, the project walks through connecting data, preparing fields, creating visualizations, and exporting a packaged Tableau workbook. The analysis focuses on understanding visitor behavior across different student class standings, with an emphasis on interpretation rather than causal conclusions.
+This exercise is designed to strengthen foundational Tableau skills by requiring independent analytical thinking and visualization design. Rather than following prescriptive steps, the project challenges the analyst to determine the most effective visualizations, calculations, and filters needed to answer real-world business questions using the Bookstore dataset.
 
-Dataset Description
+The focus is on selecting appropriate data, defining metrics clearly, and presenting insights in a way that is both accurate and easy to interpret.
 
-Dataset Name: Rec Center.xlsx
+Analytical Questions Addressed
 
-Source: Cleveland State University – Institutional Research
+Using Tableau visualizations, this project answers the following questions:
 
-Description:
-The dataset contains records of CSU Recreation Center usage, including student identifiers, class standing, geographic information, and visit details. The data is used to explore how different student groups utilize the recreation center.
+Author Debut Age
 
-Objectives
+Who was the youngest debut author and who was the oldest?
 
-The objectives of this project are to:
+Debut age is calculated as the author’s age at the time their first book was published.
 
-1. Learn how to connect Tableau to an Excel dataset
-2. Review and validate imported data fields and data types
-3. Correct data type issues, especially for geographic and identifier fields
-4. Create a visualization showing recreation center visits by class standing
-5. Explore Tableau’s charting capabilities by designing an additional custom visualization
-6. Export a packaged Tableau workbook (.twbx) for sharing and peer review
-7. Practice critical thinking by interpreting visualization results responsibly
+Sales Price Calculation
 
-Tools Used
+How should sales price be calculated when discounts are applied inconsistently?
 
-1. Tableau Desktop
-2. Microsoft Excel (data source)
+The analysis accounts for both discounted and non-discounted sales to ensure accurate revenue measurement.
 
-Project Workflow
-1. Data Connection
+Pareto Principle in Sales
 
-Connected Tableau to Rec Center.xlsx
+Do book sales follow the Pareto principle (i.e., does a small percentage of books account for the majority of sales)?
 
-Saved the Tableau workbook locally
+Visualizations are used to assess sales concentration and distribution.
 
-2. Data Validation & Preparation
+Key Skills Practiced
 
-Verified all fields imported correctly
+Analytical problem framing
 
-Corrected data types:
+Calculated fields and derived metrics
 
-Converted Postal to ZIP Code (Geographic Role)
+Visualization selection and design
 
-Converted Emplid1 (CUID) from numeric to string
+Handling conditional logic (e.g., discounts)
 
-3. Visualization 1: Visitors by Class Standing
-
-Created a worksheet titled “Visitors x Class Standing”
-
-Rows: Class Standing
-
-Columns: Count of Emplid1
-
-Visualization shows the number of recreation center visitors across student groups
-
-4. Visualization 2: Exploratory Chart
-
-Created an additional worksheet using a chart type of choice
-
-Purpose: explore the data creatively and gain familiarity with Tableau’s interface
-
-5. Export
-
-Exported the final project as a Packaged Tableau Workbook (.twbx)
-
-Prepared for peer review submission
-
-Key Insight & Interpretation
-
-The visualization shows that doctoral students visit the CSU Rec Center the least in terms of raw visit counts. However, this does not mean doctoral students are least likely to exercise.
-
-Why this conclusion cannot be made:
-
-The data shows visit counts, not exercise frequency or behavior
-
-Doctoral students likely represent a much smaller population
-
-External factors (age, work schedules, off-campus gyms, time constraints) are not captured
-
-The dataset does not normalize visits by group size
-
-This highlights the importance of context and population size when interpreting visual analytics.
-
-Notes
-
-This project is for educational purposes
-
-Visualizations are exploratory and descriptive
-
-Conclusions should be interpreted with appropriate analytical caution
+Interpreting distributions and concentration patterns
