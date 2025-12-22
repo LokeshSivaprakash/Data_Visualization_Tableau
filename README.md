@@ -10,61 +10,46 @@ Project Structure
 
 Each project is organized in a separate branch, containing:
 
-Tableau workbooks (.twbx)
-
-Supporting datasets (when applicable)
-
-Project-specific README.md documentation
-
-Screenshots or exports of key visualizations
+1. Tableau workbooks (.twbx)
+2. Supporting datasets (when applicable)
+3. Project-specific README.md documentation
+4. Exports of key visualizations
 
 This structure mirrors real-world analytics workflows, where projects are isolated while sharing a common repository.
 
-Project Index
-📊 Tableau Projects
+Project Index:
+
+📊 Tableau Projects:
+
 Project	Description	Branch
-Bookshop Data Modeling & Analytics -	Relational data modeling and exploratory analysis of books, publishers, sales, ratings, and customer behavior	bookshop-tableau-analysis
-LOD Expressions – Superstore Analysis	Advanced Tableau analysis using INCLUDE, EXCLUDE, and FIXED LOD expressions	superstore-lod-analysis
-Geographic Visualization – Cities with the Most Cars	Multi-layer geographic analysis combining city-level and state-level vehicle data	geographic-cars-analysis
-Sales Performance Dashboard (CFO View) -	Interactive dashboard evaluating sales targets, profitability, and product performance	sales-performance-dashboard
-Airline Delay Tableau Story (Final Project) -	Multi-dashboard Tableau Story analyzing U.S. airline delays by carrier, airport, and delay cause	tableau-airline-delay-story
+1. Bookshop Data Modeling & Analytics -	Relational data modeling and exploratory analysis of books, publishers, sales, ratings, and customer behavior	bookshop-tableau-analysis
+2. LOD Expressions – Superstore Analysis	Advanced Tableau analysis using INCLUDE, EXCLUDE, and FIXED LOD expressions	superstore-lod-analysis
+3. Geographic Visualization – Cities with the Most Cars	Multi-layer geographic analysis combining city-level and state-level vehicle data	geographic-cars-analysis
+4. Sales Performance Dashboard (CFO View) -	Interactive dashboard evaluating sales targets, profitability, and product performance	sales-performance-dashboard
+5. Airline Delay Tableau Story (Final Project) -	Multi-dashboard Tableau Story analyzing U.S. airline delays by carrier, airport, and delay cause	tableau-airline-delay-story
+
 How to Navigate This Repository
 
-Stay on the main branch to view the project index
-
-Switch to a project branch to:
-
-Open Tableau dashboards
-
-Review project-specific documentation
-
-Examine design logic and analytical decisions
+1. Stay on the main branch to view the project index
+2. Switch to a project branch to:
+3. Open Tableau dashboards
+4. Review project-specific documentation
+5. Examine design logic and analytical decisions
 
 Each branch contains a standalone README explaining:
 
-Objectives
-
-Dataset
-
-Analytical approach
-
-Key insights
-
-Tools & Skills Demonstrated
-
-Tableau Desktop
-
-Data modeling & relationships
-
-Level of Detail (LOD) expressions
-
-Parameters & calculated fields
-
-Geographic visualization
-
-Dashboard design & storytelling
-
-Executive-focused analytics communication
+1. Objectives
+2. Dataset
+3. Analytical approach
+4. Key insights
+5. Tools & Skills Demonstrated
+6. Tableau Desktop
+7. Data modeling & relationships
+8. Level of Detail (LOD) expressions
+9. Parameters & calculated fields
+10. Geographic visualization
+11. Dashboard design & storytelling
+12. Executive-focused analytics communication
 
 Author
 
