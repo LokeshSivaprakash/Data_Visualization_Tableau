@@ -1,97 +1,99 @@
 # Data_Visualization_Tableau
-
-CSU Recreation Center Data Visualization (Tableau)
-
 Project Overview
 
-This project is an introductory Tableau visualization exercise using real usage data from the Cleveland State University (CSU) Recreation Center. The goal is to become familiar with Tableau’s interface while building meaningful visualizations that provide insight into student recreation center usage patterns.
-Using the provided dataset, the project walks through connecting data, preparing fields, creating visualizations, and exporting a packaged Tableau workbook. The analysis focuses on understanding visitor behavior across different student class standings, with an emphasis on interpretation rather than causal conclusions.
+This project is a Tableau-based data modeling and visualization exercise using the Bookshop dataset. The objective is to understand and implement proper data relationships across multiple tables, distinguish between conceptual entities such as books and editions, and answer an analytical question through visualization.
+
+The project emphasizes relational data modeling in Tableau, exploratory analysis, and clear visual communication using a packaged Tableau workbook.
 
 Dataset Description
 
-Dataset Name: Rec Center.xlsx
+Dataset Name: Bookshop
 
-Source: Cleveland State University – Institutional Research
+Data Structure: Multi-table relational dataset
 
-Description:
-The dataset contains records of CSU Recreation Center usage, including student identifiers, class standing, geographic information, and visit details. The data is used to explore how different student groups utilize the recreation center.
+Key Concept:
+
+A Book represents the abstract work (title, author, genre).
+
+An Edition represents a physical version of a book (format, publication date, pages, price).
+
+Core Tables Used
+
+Book – Book identifiers, title, author
+
+Info – Genre, series, volume number, staff comments
+
+Edition – ISBN, format, publication details, price
+
+Author – Author demographics and writing attributes
+
+Publisher – Publishing house and location details
+
+Sales (Q1–Q4) – Transaction-level sales data
+
+Ratings – Customer ratings (1–5 scale)
+
+Series – Series-level metadata
+
+Checkouts / Awards – Engagement and recognition data
 
 Objectives
 
 The objectives of this project are to:
 
-1. Learn how to connect Tableau to an Excel dataset
-2. Review and validate imported data fields and data types
-3. Correct data type issues, especially for geographic and identifier fields
-4. Create a visualization showing recreation center visits by class standing
-5. Explore Tableau’s charting capabilities by designing an additional custom visualization
-6. Export a packaged Tableau workbook (.twbx) for sharing and peer review
-7. Practice critical thinking by interpreting visualization results responsibly
+Correctly connect multiple related tables in Tableau using relationships and joins
+
+Apply a calculated join condition between the Book and Info tables
+
+Understand hierarchical and transactional data (Orders and Items)
+
+Create a meaningful visualization that answers a self-defined analytical question
+
+Export and submit a packaged Tableau workbook and supporting image
 
 Tools Used
 
-1. Tableau Desktop
-2. Microsoft Excel (data source)
+Tableau Desktop
 
-Project Workflow
-1. Data Connection
+Bookshop dataset (provided with exercise)
 
-Connected Tableau to Rec Center.xlsx
+Data Preparation & Relationships
 
-Saved the Tableau workbook locally
+The data source was prepared according to the provided relationship diagram and instructions:
 
-2. Data Validation & Preparation
+Edition is the central table
 
-Verified all fields imported correctly
+Publisher and Sales tables are related to Edition
 
-Corrected data types:
+Book and Info tables are joined using the calculated field:
 
-Converted Postal to ZIP Code (Geographic Role)
+BookID = [BookID1] + [BookID2]
 
-Converted Emplid1 (CUID) from numeric to string
 
-3. Visualization 1: Visitors by Class Standing
+Join type: Inner Join
 
-Created a worksheet titled “Visitors x Class Standing”
+Series is only available after Info is included in the data model
 
-Rows: Class Standing
+Sales data uses hierarchical identifiers:
 
-Columns: Count of Emplid1
+One OrderID can contain multiple ItemID values
 
-Visualization shows the number of recreation center visitors across student groups
+ISBN is treated as a unique identifier for each edition
 
-4. Visualization 2: Exploratory Chart
+Visualization Task
 
-Created an additional worksheet using a chart type of choice
+After reviewing and understanding all fields, a visualization was created to answer a user-defined analytical question using the Bookshop dataset. The worksheet was:
 
-Purpose: explore the data creatively and gain familiarity with Tableau’s interface
+Appropriately named and titled
 
-5. Export
+Designed using relevant measures and dimensions
 
-Exported the final project as a Packaged Tableau Workbook (.twbx)
-
-Prepared for peer review submission
-
-Key Insight & Interpretation
-
-The visualization shows that doctoral students visit the CSU Rec Center the least in terms of raw visit counts. However, this does not mean doctoral students are least likely to exercise.
-
-Why this conclusion cannot be made:
-
-The data shows visit counts, not exercise frequency or behavior
-
-Doctoral students likely represent a much smaller population
-
-External factors (age, work schedules, off-campus gyms, time constraints) are not captured
-
-The dataset does not normalize visits by group size
-
-This highlights the importance of context and population size when interpreting visual analytics.
+Saved as part of the Tableau workbook
 
 Notes
 
-This project is for educational purposes
+This project focuses on data modeling accuracy and visualization clarity
 
-Visualizations are exploratory and descriptive
+Results are exploratory and descriptive
 
-Conclusions should be interpreted with appropriate analytical caution
+Conclusions depend on the analytical question posed by the user
