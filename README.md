@@ -1,99 +1,80 @@
 # Data_Visualization_Tableau
 Project Overview
 
-This project is a Tableau-based data modeling and visualization exercise using the Bookshop dataset. The objective is to understand and implement proper data relationships across multiple tables, distinguish between conceptual entities such as books and editions, and answer an analytical question through visualization.
+Bookshop Data Modeling & Analytics (Tableau)
+Overview
 
-The project emphasizes relational data modeling in Tableau, exploratory analysis, and clear visual communication using a packaged Tableau workbook.
+This project uses Tableau to model and analyze the Bookshop dataset. It combines relational data modeling with exploratory visualization to answer open-ended questions about books, publishers, sales, and customer engagement. The project reflects a real-world analytics workflow: preparing data correctly first, then using visualization to derive insight.
 
-Dataset Description
+Dataset
 
-Dataset Name: Bookshop
+The Bookshop dataset is a multi-table relational dataset containing information on:
 
-Data Structure: Multi-table relational dataset
+Books and editions
 
-Key Concept:
+Authors and publishers
 
-A Book represents the abstract work (title, author, genre).
+Sales transactions (Q1–Q4)
 
-An Edition represents a physical version of a book (format, publication date, pages, price).
+Ratings, checkouts, series, and awards
 
-Core Tables Used
-
-Book – Book identifiers, title, author
-
-Info – Genre, series, volume number, staff comments
-
-Edition – ISBN, format, publication details, price
-
-Author – Author demographics and writing attributes
-
-Publisher – Publishing house and location details
-
-Sales (Q1–Q4) – Transaction-level sales data
-
-Ratings – Customer ratings (1–5 scale)
-
-Series – Series-level metadata
-
-Checkouts / Awards – Engagement and recognition data
+A key concept is the distinction between a Book (the abstract work) and an Edition (a physical version identified by ISBN).
 
 Objectives
 
-The objectives of this project are to:
+Build a correct relational data model in Tableau
 
-Correctly connect multiple related tables in Tableau using relationships and joins
+Apply calculated joins and table relationships
 
-Apply a calculated join condition between the Book and Info tables
+Explore publishing trends, book popularity, and customer behavior
 
-Understand hierarchical and transactional data (Orders and Items)
+Answer analytical questions using effective visualizations
 
-Create a meaningful visualization that answers a self-defined analytical question
+Practice clear analytical reasoning and visualization design
 
-Export and submit a packaged Tableau workbook and supporting image
-
-Tools Used
-
-Tableau Desktop
-
-Bookshop dataset (provided with exercise)
-
-Data Preparation & Relationships
-
-The data source was prepared according to the provided relationship diagram and instructions:
+Data Modeling (Part 1)
 
 Edition is the central table
 
 Publisher and Sales tables are related to Edition
 
-Book and Info tables are joined using the calculated field:
+Book and Info are joined using a calculated field:
 
 BookID = [BookID1] + [BookID2]
 
 
 Join type: Inner Join
 
-Series is only available after Info is included in the data model
+Series is available only after Info is included
 
-Sales data uses hierarchical identifiers:
+ISBN uniquely identifies each edition
 
-One OrderID can contain multiple ItemID values
+Sales data follows an Order → Item hierarchy
 
-ISBN is treated as a unique identifier for each edition
+This structure ensures accurate aggregation and prevents duplication.
 
-Visualization Task
+Analysis & Visualization (Part 2)
 
-After reviewing and understanding all fields, a visualization was created to answer a user-defined analytical question using the Bookshop dataset. The worksheet was:
+Visualizations were created to answer the following questions:
 
-Appropriately named and titled
+Publisher specialization: Do publishers focus on specific genres, formats, or markets?
 
-Designed using relevant measures and dimensions
+Book popularity: Which books are most and least popular based on sales, ratings, and checkouts?
 
-Saved as part of the Tableau workbook
+Publication timing: When are most books published, and are there anomalies?
 
-Notes
+Ratings distribution: How do ratings vary by book, genre, and awards?
 
-This project focuses on data modeling accuracy and visualization clarity
+Each question was answered using appropriate charts selected for clarity and insight.
 
-Results are exploratory and descriptive
+Deliverables
 
-Conclusions depend on the analytical question posed by the user
+Packaged Tableau Workbook (.twbx)
+
+Exported visualization screenshots
+
+README.md (this file)
+
+Conclusion
+
+This project demonstrates how strong data modeling supports meaningful visualization. By combining accurate table relationships with thoughtful visual analysis, the project provides insight into publishing behavior, book performance, and customer engagement—mirroring the type of analytical work expected in professional settings.
