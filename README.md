@@ -1,97 +1,52 @@
 # Data_Visualization_Tableau
 
-CSU Recreation Center Data Visualization (Tableau)
+tableau-airline-delay-story
 
-Project Overview
+Project Objective
 
-This project is an introductory Tableau visualization exercise using real usage data from the Cleveland State University (CSU) Recreation Center. The goal is to become familiar with Tableau’s interface while building meaningful visualizations that provide insight into student recreation center usage patterns.
-Using the provided dataset, the project walks through connecting data, preparing fields, creating visualizations, and exporting a packaged Tableau workbook. The analysis focuses on understanding visitor behavior across different student class standings, with an emphasis on interpretation rather than causal conclusions.
+This project simulates real-world visualization challenges by requiring the design of a multi-dashboard Tableau Story that communicates a clear, data-driven narrative to a defined audience. The goal is not only to create charts, but to explain why specific visualizations, metrics, and structures are used, mirroring how analytics are presented in professional and executive settings.
 
-Dataset Description
+Using U.S. airline delay data, the project analyzes operational performance across carriers and airports to identify key contributors to arrival delays. The final deliverable integrates three dashboards into a cohesive Tableau Story, supported by narrative context and analytical reasoning.
 
-Dataset Name: Rec Center.xlsx
+Project Topic
 
-Source: Cleveland State University – Institutional Research
+Airline delays are a major operational and customer experience issue in U.S. commercial aviation. Delays increase operational costs, disrupt schedules, waste fuel, and reduce customer satisfaction at a national scale. Understanding where and why delays occur is critical for improving efficiency and accountability across the airline industry.
 
-Description:
-The dataset contains records of CSU Recreation Center usage, including student identifiers, class standing, geographic information, and visit details. The data is used to explore how different student groups utilize the recreation center.
+This project explores airline delays by analyzing carriers, airports, geographic patterns, and delay causes, with a focus on identifying the largest contributors to average arrival delay time.
 
-Objectives
+Research Questions
 
-The objectives of this project are to:
+Which U.S. airline carrier experiences the highest average arrival delay time?
 
-1. Learn how to connect Tableau to an Excel dataset
-2. Review and validate imported data fields and data types
-3. Correct data type issues, especially for geographic and identifier fields
-4. Create a visualization showing recreation center visits by class standing
-5. Explore Tableau’s charting capabilities by designing an additional custom visualization
-6. Export a packaged Tableau workbook (.twbx) for sharing and peer review
-7. Practice critical thinking by interpreting visualization results responsibly
+Which origin or destination airports have the highest average delays, and what geographic patterns emerge?
 
-Tools Used
+Which delay cause (weather, carrier, NAS, security, or late aircraft) contributes the most to overall delay minutes across the industry?
 
-1. Tableau Desktop
-2. Microsoft Excel (data source)
+Analytical Approach
 
-Project Workflow
-1. Data Connection
+Built three dashboards, each aligned to one research question
 
-Connected Tableau to Rec Center.xlsx
+Combined dashboards into a Tableau Story with a logical narrative flow
 
-Saved the Tableau workbook locally
+Applied:
 
-2. Data Validation & Preparation
+Dynamic parameters for interactive analysis
 
-Verified all fields imported correctly
+LOD expressions for accurate aggregation
 
-Corrected data types:
+Conditional formatting to highlight performance extremes
 
-Converted Postal to ZIP Code (Geographic Role)
+Structured the story to move from carrier-level insights, to geographic airport patterns, and finally to operational impact by delay cause and airport tier
 
-Converted Emplid1 (CUID) from numeric to string
+Deliverables
 
-3. Visualization 1: Visitors by Class Standing
+Tableau Story (.twbx) containing all dashboards and interactions
 
-Created a worksheet titled “Visitors x Class Standing”
+Written narrative (≤ 500 words) explaining dashboard logic, design choices, and analytical reasoning
 
-Rows: Class Standing
+Documented data source with full citation
 
-Columns: Count of Emplid1
+Data Source
 
-Visualization shows the number of recreation center visitors across student groups
-
-4. Visualization 2: Exploratory Chart
-
-Created an additional worksheet using a chart type of choice
-
-Purpose: explore the data creatively and gain familiarity with Tableau’s interface
-
-5. Export
-
-Exported the final project as a Packaged Tableau Workbook (.twbx)
-
-Prepared for peer review submission
-
-Key Insight & Interpretation
-
-The visualization shows that doctoral students visit the CSU Rec Center the least in terms of raw visit counts. However, this does not mean doctoral students are least likely to exercise.
-
-Why this conclusion cannot be made:
-
-The data shows visit counts, not exercise frequency or behavior
-
-Doctoral students likely represent a much smaller population
-
-External factors (age, work schedules, off-campus gyms, time constraints) are not captured
-
-The dataset does not normalize visits by group size
-
-This highlights the importance of context and population size when interpreting visual analytics.
-
-Notes
-
-This project is for educational purposes
-
-Visualizations are exploratory and descriptive
-
-Conclusions should be interpreted with appropriate analytical caution
+U.S. Department of Transportation – Bureau of Transportation Statistics
+https://www.transtats.bts.gov/OT_Delay/OT_DelayCause1.asp
