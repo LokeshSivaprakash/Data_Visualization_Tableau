@@ -20,25 +20,18 @@ Objectives
 
 The objectives of this project are to:
 
-Learn how to connect Tableau to an Excel dataset
-
-Review and validate imported data fields and data types
-
-Correct data type issues, especially for geographic and identifier fields
-
-Create a visualization showing recreation center visits by class standing
-
-Explore Tableau’s charting capabilities by designing an additional custom visualization
-
-Export a packaged Tableau workbook (.twbx) for sharing and peer review
-
-Practice critical thinking by interpreting visualization results responsibly
+1. Learn how to connect Tableau to an Excel dataset
+2. Review and validate imported data fields and data types
+3. Correct data type issues, especially for geographic and identifier fields
+4. Create a visualization showing recreation center visits by class standing
+5. Explore Tableau’s charting capabilities by designing an additional custom visualization
+6. Export a packaged Tableau workbook (.twbx) for sharing and peer review
+7. Practice critical thinking by interpreting visualization results responsibly
 
 Tools Used
 
-Tableau Desktop
-
-Microsoft Excel (data source)
+1. Tableau Desktop
+2. Microsoft Excel (data source)
 
 Project Workflow
 1. Data Connection
