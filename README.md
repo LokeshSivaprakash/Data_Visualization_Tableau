@@ -1,97 +1,78 @@
 # Data_Visualization_Tableau
 
-CSU Recreation Center Data Visualization (Tableau)
+Objective
 
-Project Overview
+This exercise focuses on building an interactive Tableau dashboard to evaluate sales performance for an office supply company. Acting as an analyst reporting to the CFO, the goal is to analyze order and sales target data and create visualizations that help management determine whether sales targets were met and where performance is strong or weak.
 
-This project is an introductory Tableau visualization exercise using real usage data from the Cleveland State University (CSU) Recreation Center. The goal is to become familiar with Tableau’s interface while building meaningful visualizations that provide insight into student recreation center usage patterns.
-Using the provided dataset, the project walks through connecting data, preparing fields, creating visualizations, and exporting a packaged Tableau workbook. The analysis focuses on understanding visitor behavior across different student class standings, with an emphasis on interpretation rather than causal conclusions.
+The project emphasizes dynamic parameters, calculated fields, and user-friendly design to support executive decision-making.
 
-Dataset Description
+Dataset
 
-Dataset Name: Rec Center.xlsx
+File: Tableau Exercise Data Set.xlsx
 
-Source: Cleveland State University – Institutional Research
+Data Includes:
 
-Description:
-The dataset contains records of CSU Recreation Center usage, including student identifiers, class standing, geographic information, and visit details. The data is used to explore how different student groups utilize the recreation center.
+Orders
 
-Objectives
+Product pricing and discounts
 
-The objectives of this project are to:
+Sales targets
 
-1. Learn how to connect Tableau to an Excel dataset
-2. Review and validate imported data fields and data types
-3. Correct data type issues, especially for geographic and identifier fields
-4. Create a visualization showing recreation center visits by class standing
-5. Explore Tableau’s charting capabilities by designing an additional custom visualization
-6. Export a packaged Tableau workbook (.twbx) for sharing and peer review
-7. Practice critical thinking by interpreting visualization results responsibly
+Time-based performance metrics
 
-Tools Used
+Analytical Tasks
+1. Top-N Product Analysis
 
-1. Tableau Desktop
-2. Microsoft Excel (data source)
+Create a dynamic Top-N products visualization where popularity can be defined in two ways:
 
-Project Workflow
-1. Data Connection
+Sales Revenue
 
-Connected Tableau to Rec Center.xlsx
+Order Quantity
 
-Saved the Tableau workbook locally
+Key Requirements:
 
-2. Data Validation & Preparation
+Create a calculated field for Sales Revenue that accounts for discounts
 
-Verified all fields imported correctly
+Discount is a percentage reduction from price
 
-Corrected data types:
+Use a parameter to toggle between:
 
-Converted Postal to ZIP Code (Geographic Role)
+Sales Revenue
 
-Converted Emplid1 (CUID) from numeric to string
+Order Quantity
 
-3. Visualization 1: Visitors by Class Standing
+Allow the user to choose the value of N
 
-Created a worksheet titled “Visitors x Class Standing”
+Ensure the chart title and axis labels update dynamically based on the selected parameter
 
-Rows: Class Standing
+2. Monthly Profit Control Chart
 
-Columns: Count of Emplid1
+Create a time-series visualization showing monthly profit across the dataset.
 
-Visualization shows the number of recreation center visitors across student groups
+Key Requirements:
 
-4. Visualization 2: Exploratory Chart
+Create a Profit calculated field
 
-Created an additional worksheet using a chart type of choice
+Define each month as:
 
-Purpose: explore the data creatively and gain familiarity with Tableau’s interface
+Profitable
 
-5. Export
+Not Profitable
 
-Exported the final project as a Packaged Tableau Workbook (.twbx)
+Use a parameter slider to allow users to adjust the profitability threshold
 
-Prepared for peer review submission
+Color data points based on profitability status
 
-Key Insight & Interpretation
+This visualization functions as a control chart, enabling management to quickly identify months that underperform relative to expectations.
 
-The visualization shows that doctoral students visit the CSU Rec Center the least in terms of raw visit counts. However, this does not mean doctoral students are least likely to exercise.
+Key Skills Practiced
 
-Why this conclusion cannot be made:
+Calculated fields (revenue, profit, conditional logic)
 
-The data shows visit counts, not exercise frequency or behavior
+Dynamic parameters and parameter-driven titles
 
-Doctoral students likely represent a much smaller population
+Executive-focused dashboard design
 
-External factors (age, work schedules, off-campus gyms, time constraints) are not captured
+Interactive performance analysis
 
-The dataset does not normalize visits by group size
-
-This highlights the importance of context and population size when interpreting visual analytics.
-
-Notes
-
-This project is for educational purposes
-
-Visualizations are exploratory and descriptive
-
-Conclusions should be interpreted with appropriate analytical caution
+Tableau control chart construction
